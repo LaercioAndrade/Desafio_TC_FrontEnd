@@ -1,0 +1,168 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-07-08T11:44:29.181Z",
+    "end": "2021-07-08T11:45:19.130Z",
+    "duration": 49949,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "390e219d-e474-45b0-9fa2-707500e95930",
+      "title": "",
+      "fullFile": "cypress/integration/test.feature",
+      "file": "cypress/integration/test.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "29588cf2-14db-492a-a218-fc3bbcf88b51",
+          "title": "Realizar automação no site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar Cadastro com sucesso no site",
+              "fullTitle": "Realizar automação no site Realizar Cadastro com sucesso no site",
+              "timedOut": null,
+              "duration": 14236,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "75652f27-fa1b-4484-9135-7aa0dbde5e07",
+              "parentUUID": "29588cf2-14db-492a-a218-fc3bbcf88b51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Limpar dados informados",
+              "fullTitle": "Realizar automação no site Limpar dados informados",
+              "timedOut": null,
+              "duration": 15789,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `#Button`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `#Button`, but never found it.\n    at TestPage.ClicarBotaoRefresh (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:240:10)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:298:12)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:10789:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:10118:35)",
+                "diff": null
+              },
+              "uuid": "ccc40f57-51e1-4617-b85a-bfddaf8b80c7",
+              "parentUUID": "29588cf2-14db-492a-a218-fc3bbcf88b51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar Seleção de País",
+              "fullTitle": "Realizar automação no site Validar Seleção de País",
+              "timedOut": null,
+              "duration": 13551,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Brasil' within the element: <select#countries.form-control.ng-untouched.ng-dirty.ng-valid-parse.ng-valid.ng-valid-required> but never did.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Brasil' within the element: <select#countries.form-control.ng-untouched.ng-dirty.ng-valid-parse.ng-valid.ng-valid-required> but never did.\n    at TestPage.ValidarCountry (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:245:34)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:305:12)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:10789:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:10118:35)",
+                "diff": null
+              },
+              "uuid": "9bcb77f1-c839-4009-82ef-d65841cf1e7e",
+              "parentUUID": "29588cf2-14db-492a-a218-fc3bbcf88b51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar Seleção de Skills",
+              "fullTitle": "Realizar automação no site Validar Seleção de Skills",
+              "timedOut": null,
+              "duration": 6189,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "58adb809-19e2-402d-8e25-bdfac1de1f1e",
+              "parentUUID": "29588cf2-14db-492a-a218-fc3bbcf88b51",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "75652f27-fa1b-4484-9135-7aa0dbde5e07",
+            "58adb809-19e2-402d-8e25-bdfac1de1f1e"
+          ],
+          "failures": [
+            "ccc40f57-51e1-4617-b85a-bfddaf8b80c7",
+            "9bcb77f1-c839-4009-82ef-d65841cf1e7e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 49765,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}
