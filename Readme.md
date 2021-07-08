@@ -19,13 +19,13 @@ Configurações do Projeto:
 
 ### Support:
 
-+ Elements
++ Elements: -
 Dentro da pasta Elements contém o arquivo testElements.js que contém todos os elementos mapeados 
 
-+ PageObjects
++ PageObjects: -
 Dentro da pasta PageObjects contém o arquivo testPage.js 
 
-+ Step
++ Step: -
 Dentro da pasta Steps contém o arquivo testStep.js que contém todos os steps do Projeto
 
 ### Integration
@@ -35,25 +35,26 @@ Dentro da pasta Steps contém o arquivo testStep.js que contém todos os steps d
 
 ### Para executar o Projeto:
 
+Executa o projeto no navegador Google Chrome
 + npm run test:chrome
-executa o projeto no navegador Google Chrome
 
+Executa o projeto no navegador Google Chrome
 + npm run test:firefox
-executa o projeto no navegador Google Chrome
 
+Executa o projeto em modo modo headless
 + npm run test
-executa o projeto em modo modo headless
+
 
 ### Cenários Automatizados
 
-+ Cenário de Cadastro (Done)
++ Cenário de Cadastro (Done) : - 
 Preenche todos os campos e realiza o Cadastro
 
-+ Cenário Limpar dado preenchidos  (Failed)
++ Cenário Limpar dado preenchidos (Failed): -
 Preenche alguns campos e limpa os dados
 
-+ Cenário Validar seleção de País (Failed)
++ Cenário Validar seleção de País (Failed): -
 Seleciona um país e verfica se no campo contém o país selecionado
 
-+ Cenário Validar seleção de Skills (Done)
++ Cenário Validar seleção de Skills (Done): - 
 Seleciona uma Skill e valida se no campo contém a skill selecionado
